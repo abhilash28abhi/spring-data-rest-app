@@ -1,6 +1,8 @@
 # spring-data-rest-app
 
 1.  The JpaRepository->PageAndSortingRepository->CrudRepository
+3.  The rest api json will have 3 parts: _links: which contains the hypermedia links which this resource knows about _embedded: contains
+    a collection of data for that respository _page: encapsulates the paging information about the collection resource
 2.  By default the Page element has a size of 20 elements
 3.  We can pass a size parameter with a value for the number of elements we need like size=5 or 6 etc
 4.  To sort the results pass a sort parameter with field and order of sort like : sort={field of entity to sort},asc/desc
